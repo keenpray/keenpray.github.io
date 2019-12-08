@@ -81,9 +81,9 @@
 
 <meta name="description" content="天道酬勤">
 <meta property="og:type" content="website">
-<meta property="og:title" content="a bug\&#39;s life">
+<meta property="og:title" content="a bug&#39;s life">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
-<meta property="og:site_name" content="a bug\&#39;s life">
+<meta property="og:site_name" content="a bug&#39;s life">
 <meta property="og:description" content="天道酬勤">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
@@ -122,7 +122,7 @@
 
 
 
-  <title>a bug\'s life</title>
+  <title>a bug's life</title>
   
 
 
@@ -153,7 +153,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">a bug\'s life</span>
+        <span class="site-title">a bug's life</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -179,9 +179,9 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/home" rel="section">
+          <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             Home
           </a>
@@ -189,7 +189,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -239,7 +239,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="a bug\'s life">
+      <meta itemprop="name" content="a bug's life">
     </span>
 
     
@@ -301,12 +301,15 @@
       
         
           
-            <h1 id="召回率（Recall）"><a href="#召回率（Recall）" class="headerlink" title="召回率（Recall）"></a>召回率（Recall）</h1><p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">R &#x3D; \frac&#123;TP&#125;&#123;TP+FN&#125;</span></pre></td></tr></table></figure>
-<h1 id="精确率（precision）"><a href="#精确率（precision）" class="headerlink" title="精确率（precision）"></a>精确率（precision）</h1><p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">P &#x3D; \frac&#123;TP&#125;&#123;TP+FP&#125;</span></pre></td></tr></table></figure>
-<h1 id="F1值（F1-score）"><a href="#F1值（F1-score）" class="headerlink" title="F1值（F1-score）"></a>F1值（F1-score）</h1><p>精确率和召回率的调和平均数，最大为1，最小为0；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">F1 &#x3D; 2 \cdot \frac&#123;P \cdot R&#125;&#123;P+R&#125;</span></pre></td></tr></table></figure>
+            <h1>召回率（Recall）</h1>
+<p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}</p>
+<p>$ R = \frac{TP}{TP+FN} $</p>
+<h1>精确率（precision）</h1>
+<p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">P &#x3D; \frac&#123;TP&#125;&#123;TP+FP&#125;</span></pre></td></tr></table></figure></p>
+<h1>F1值（F1-score）</h1>
+<p>精确率和召回率的调和平均数，最大为1，最小为0；
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">F1 &#x3D; 2 \cdot \frac&#123;P \cdot R&#125;&#123;P+R&#125;</span></pre></td></tr></table></figure></p>
 
           
         
@@ -390,7 +393,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
@@ -603,6 +606,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
