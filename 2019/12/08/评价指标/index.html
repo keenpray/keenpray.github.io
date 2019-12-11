@@ -25,8 +25,8 @@
 <script>
     (function(){
         if(''){
-            if (prompt('����������') !== ''){
-                alert('�������!');
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误!');
                 history.back();
             }
         }
@@ -654,10 +654,12 @@ $ F1 = 2 \cdot \frac{P \cdot R}{P+R} $</p>
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome-animation.min.css">
 
 <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart faa-pulse animated" style="color:red;"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Keen</span>
 
@@ -979,5 +981,11 @@ $ F1 = 2 \cdot \frac{P \cdot R}{P+R} $</p>
 
   
 
+  
+  
+     <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+     <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+     <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  
 </body>
 </html>
