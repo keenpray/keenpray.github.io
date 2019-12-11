@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="en">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +14,24 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('����������') !== ''){
+                alert('�������!');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
 
@@ -68,7 +85,7 @@
 
 
 
-  <meta name="keywords" content="深度学习,机器学习,统计," />
+  <meta name="keywords" content="统计,深度学习,机器学习," />
 
 
 
@@ -81,14 +98,14 @@
 
 
 
-<meta name="description" content="召回率（Recall）原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}$ R &#x3D; \frac{TP}{TP+FN} $ 精确率（precision）预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}$ P &#x3D; \frac{TP}{TP+FP} $ F1值（F1-score）精确率和召回率的调和平均数，最大为1，最小为0；$ F1 &#x3D; 2 \cdot">
-<meta name="keywords" content="深度学习,机器学习,统计">
+<meta name="description" content="召回率（Recall） 原始样本中的正类有多少被正确预测了。{FP：正类预测为负类} $ R &#x3D; \frac{TP}{TP+FN} $ 精确率（precision） 预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类} $ P &#x3D; \frac{TP}{TP+FP} $ F1值（F1-score） 精确率和召回率的调和平均数，最大为1，最小为0； $ F1 &#x3D; 2">
+<meta name="keywords" content="统计,深度学习,机器学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="评价指标">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;08&#x2F;%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87&#x2F;index.html">
 <meta property="og:site_name" content="a bug&#39;s life">
-<meta property="og:description" content="召回率（Recall）原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}$ R &#x3D; \frac{TP}{TP+FN} $ 精确率（precision）预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}$ P &#x3D; \frac{TP}{TP+FP} $ F1值（F1-score）精确率和召回率的调和平均数，最大为1，最小为0；$ F1 &#x3D; 2 \cdot">
-<meta property="og:locale" content="en">
+<meta property="og:description" content="召回率（Recall） 原始样本中的正类有多少被正确预测了。{FP：正类预测为负类} $ R &#x3D; \frac{TP}{TP+FN} $ 精确率（precision） 预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类} $ P &#x3D; \frac{TP}{TP+FP} $ F1值（F1-score） 精确率和召回率的调和平均数，最大为1，最小为0； $ F1 &#x3D; 2">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-12-08T12:10:13.007Z">
 <meta name="twitter:card" content="summary">
 
@@ -106,7 +123,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -138,7 +155,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -188,7 +205,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            首页
           </a>
         </li>
       
@@ -198,7 +215,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            Tags
+            标签
           </a>
         </li>
       
@@ -208,7 +225,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Categories
+            分类
           </a>
         </li>
       
@@ -218,7 +235,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            归档
           </a>
         </li>
       
@@ -228,7 +245,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-signal"></i> <br />
             
-            Top
+            阅读排行
           </a>
         </li>
       
@@ -292,9 +309,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-08T16:26:42+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-08T16:26:42+08:00">
                 2019-12-08
               </time>
             
@@ -313,7 +330,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">In</span>
+                <span class="post-meta-item-text">分类于</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -340,7 +357,7 @@
                  <i class="fa fa-eye"></i>
                </span>
                
-                 <span class="post-meta-item-text">Visitors&#58;</span>
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
                
                  <span class="leancloud-visitors-count"></span>
              </span>
@@ -348,6 +365,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  113
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
           
 
           
@@ -365,9 +413,15 @@
       
 
       
-        <h1 id="召回率（Recall）"><a href="#召回率（Recall）" class="headerlink" title="召回率（Recall）"></a>召回率（Recall）</h1><p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>$ R = \frac{TP}{TP+FN} $</p>
-<h1 id="精确率（precision）"><a href="#精确率（precision）" class="headerlink" title="精确率（precision）"></a>精确率（precision）</h1><p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>$ P = \frac{TP}{TP+FP} $</p>
-<h1 id="F1值（F1-score）"><a href="#F1值（F1-score）" class="headerlink" title="F1值（F1-score）"></a>F1值（F1-score）</h1><p>精确率和召回率的调和平均数，最大为1，最小为0；<br>$ F1 = 2 \cdot \frac{P \cdot R}{P+R} $</p>
+        <h1>召回率（Recall）</h1>
+<p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>
+$ R = \frac{TP}{TP+FN} $</p>
+<h1>精确率（precision）</h1>
+<p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>
+$ P = \frac{TP}{TP+FP} $</p>
+<h1>F1值（F1-score）</h1>
+<p>精确率和召回率的调和平均数，最大为1，最小为0；<br>
+$ F1 = 2 \cdot \frac{P \cdot R}{P+R} $</p>
 
       
     </div>
@@ -395,11 +449,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/%E7%BB%9F%E8%AE%A1/" rel="tag"><i class="fa fa-tag"></i> 统计</a>
+          
             <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> 深度学习</a>
           
             <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> 机器学习</a>
-          
-            <a href="/tags/%E7%BB%9F%E8%AE%A1/" rel="tag"><i class="fa fa-tag"></i> 统计</a>
           
         </div>
       
@@ -412,15 +466,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/12/08/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%E7%9A%84%E5%89%AF%E6%9C%AC/" rel="next" title="评价">
+                <i class="fa fa-chevron-left"></i> 评价
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/12/08/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%E7%9A%84%E5%89%AF%E6%9C%AC/" rel="prev" title="评价">
-                评价 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -474,10 +528,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
+            站点概览
           </li>
         </ul>
       
@@ -502,7 +556,7 @@
                 <a href="/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -513,7 +567,7 @@
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">categories</span>
+                  <span class="site-state-item-name">分类</span>
                 </a>
               </div>
             
@@ -524,7 +578,7 @@
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
                   <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">tags</span>
+                  <span class="site-state-item-name">标签</span>
                 </a>
               </div>
             
@@ -579,7 +633,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#召回率（Recall）"><span class="nav-number">1.</span> <span class="nav-text">召回率（Recall）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#精确率（precision）"><span class="nav-number">2.</span> <span class="nav-text">精确率（precision）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#F1值（F1-score）"><span class="nav-number">3.</span> <span class="nav-text">F1值（F1-score）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">1.</span> <span class="nav-text">召回率（Recall）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">2.</span> <span class="nav-text">精确率（precision）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-number">3.</span> <span class="nav-text">F1值（F1-score）</span></a></li></ol></div>
             
 
           </div>
@@ -614,16 +668,16 @@
 <div class="powered-by">
 <i class="fa fa-user-circle" aria-hidden="true"></i> 
 <span id="busuanzi_container_site_uv">
-  Visitors to this site: <span id="busuanzi_value_site_uv"></span>
+  访客量: <span id="busuanzi_value_site_uv"></span>
 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
 <span id="busuanzi_container_site_pv">
-  Clicks of this site: <span id="busuanzi_value_site_pv"></span>
+  点击量: <span id="busuanzi_value_site_pv"></span>
 </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-  <span class="post-count">Word count: 192 words</span>
+  <span class="post-count">全站共计: 192 字</span>
 </div>
 
 
