@@ -1,36 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>评价指标</title>
-    <url>/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/</url>
-    <content><![CDATA[<h1>召回率（Recall）</h1>
-<p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>
-$ R = \frac{TP}{TP+FN} $</p>
-<h1>精确率（precision）</h1>
-<p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>
-$ P = \frac{TP}{TP+FP} $</p>
-<h1>F1值（F1-score）</h1>
-<p>精确率和召回率的调和平均数，最大为1，最小为0；<br>
-$ F1 = 2 \cdot \frac{P \cdot R}{P+R} $</p>
-]]></content>
-      <categories>
-        <category>人工智能</category>
-      </categories>
-      <tags>
-        <tag>统计</tag>
-        <tag>深度学习</tag>
-        <tag>机器学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>评价</title>
     <url>/%E4%BA%BA%E5%B7%A5/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%E7%9A%84%E5%89%AF%E6%9C%AC/</url>
-    <content><![CDATA[<h1>召回率（Recall）</h1>
-<p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>
-$ R = \frac{TP}{TP+FN} $</p>
-<h1>精确率（precision）</h1>
-<p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>
-$ P = \frac{TP}{TP+FP} $</p>
+    <content><![CDATA[<h1 id="召回率（Recall）"><a href="#召回率（Recall）" class="headerlink" title="召回率（Recall）"></a>召回率（Recall）</h1><p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>$ R = \frac{TP}{TP+FN} $</p>
+<h1 id="精确率（precision）"><a href="#精确率（precision）" class="headerlink" title="精确率（precision）"></a>精确率（precision）</h1><p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>$ P = \frac{TP}{TP+FP} $</p>
 ]]></content>
       <categories>
         <category>人工</category>
@@ -38,6 +12,22 @@ $ P = \frac{TP}{TP+FP} $</p>
       <tags>
         <tag>深度学习</tag>
         <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>评价指标</title>
+    <url>/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/</url>
+    <content><![CDATA[<h1 id="召回率（Recall）"><a href="#召回率（Recall）" class="headerlink" title="召回率（Recall）"></a>召回率（Recall）</h1><p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>$ R = \frac{TP}{TP+FN} $</p>
+<h1 id="精确率（precision）"><a href="#精确率（precision）" class="headerlink" title="精确率（precision）"></a>精确率（precision）</h1><p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>$ P = \frac{TP}{TP+FP} $</p>
+<h1 id="F1值（F1-score）"><a href="#F1值（F1-score）" class="headerlink" title="F1值（F1-score）"></a>F1值（F1-score）</h1><p>精确率和召回率的调和平均数，最大为1，最小为0；<br>$ F1 = 2 \cdot \frac{P \cdot R}{P+R} $</p>
+]]></content>
+      <categories>
+        <category>人工智能</category>
+      </categories>
+      <tags>
+        <tag>深度学习</tag>
+        <tag>机器学习</tag>
+        <tag>统计</tag>
       </tags>
   </entry>
 </search>
