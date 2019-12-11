@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-11T05:54:46.270Z</updated>
+  <updated>2019-12-08T12:10:13.007Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,19 +17,57 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>评价指标</title>
+    <link href="http://yoursite.com/2019/12/08/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/"/>
+    <id>http://yoursite.com/2019/12/08/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/</id>
+    <published>2019-12-08T08:26:42.309Z</published>
+    <updated>2019-12-08T12:10:13.007Z</updated>
+    
+    <content type="html"><![CDATA[<h1>召回率（Recall）</h1><p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>$ R = \frac{TP}{TP+FN} $</p><h1>精确率（precision）</h1><p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>$ P = \frac{TP}{TP+FP} $</p><h1>F1值（F1-score）</h1><p>精确率和召回率的调和平均数，最大为1，最小为0；<br>$ F1 = 2 \cdot \frac{P \cdot R}{P+R} $</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1&gt;召回率（Recall）&lt;/h1&gt;
+&lt;p&gt;原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}&lt;br&gt;
+$ R = \frac{TP}{TP+FN} $&lt;/p&gt;
+&lt;h1&gt;精确率（precision）&lt;/h1&gt;
+&lt;p&gt;预测为正的样本中有多少是真正为正的正样本。{TP：
+      
+    
+    </summary>
+    
+    
+      <category term="人工智能" scheme="http://yoursite.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    
+      <category term="统计" scheme="http://yoursite.com/tags/%E7%BB%9F%E8%AE%A1/"/>
+    
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="机器学习" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>评价</title>
     <link href="http://yoursite.com/2019/12/08/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
     <id>http://yoursite.com/2019/12/08/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87%E7%9A%84%E5%89%AF%E6%9C%AC/</id>
     <published>2019-12-08T08:26:42.309Z</published>
     <updated>2019-12-11T05:54:46.270Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="召回率（Recall）"><a href="#召回率（Recall）" class="headerlink" title="召回率（Recall）"></a>召回率（Recall）</h1><p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>$ R = \frac{TP}{TP+FN} $</p><h1 id="精确率（precision）"><a href="#精确率（precision）" class="headerlink" title="精确率（precision）"></a>精确率（precision）</h1><p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>$ P = \frac{TP}{TP+FP} $</p>]]></content>
+    <content type="html"><![CDATA[<h1>召回率（Recall）</h1><p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>$ R = \frac{TP}{TP+FN} $</p><h1>精确率（precision）</h1><p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>$ P = \frac{TP}{TP+FP} $</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;召回率（Recall）&quot;&gt;&lt;a href=&quot;#召回率（Recall）&quot; class=&quot;headerlink&quot; title=&quot;召回率（Recall）&quot;&gt;&lt;/a&gt;召回率（Recall）&lt;/h1&gt;&lt;p&gt;原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}&lt;br&gt;
+        &lt;h1&gt;召回率（Recall）&lt;/h1&gt;
+&lt;p&gt;原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}&lt;br&gt;
+$ R = \frac{TP}{TP+FN} $&lt;/p&gt;
+&lt;h1&gt;精确率（precision）&lt;/h1&gt;
+&lt;p&gt;预测为正的样本中有多少是真正为正的正样本。{TP：
       
     
     </summary>
@@ -41,36 +79,6 @@
       <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="机器学习" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>评价指标</title>
-    <link href="http://yoursite.com/2019/12/08/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/"/>
-    <id>http://yoursite.com/2019/12/08/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/</id>
-    <published>2019-12-08T08:26:42.309Z</published>
-    <updated>2019-12-08T12:10:13.007Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="召回率（Recall）"><a href="#召回率（Recall）" class="headerlink" title="召回率（Recall）"></a>召回率（Recall）</h1><p>原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}<br>$ R = \frac{TP}{TP+FN} $</p><h1 id="精确率（precision）"><a href="#精确率（precision）" class="headerlink" title="精确率（precision）"></a>精确率（precision）</h1><p>预测为正的样本中有多少是真正为正的正样本。{TP：正类预测为正类，FP：负类预测为正类}<br>$ P = \frac{TP}{TP+FP} $</p><h1 id="F1值（F1-score）"><a href="#F1值（F1-score）" class="headerlink" title="F1值（F1-score）"></a>F1值（F1-score）</h1><p>精确率和召回率的调和平均数，最大为1，最小为0；<br>$ F1 = 2 \cdot \frac{P \cdot R}{P+R} $</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;召回率（Recall）&quot;&gt;&lt;a href=&quot;#召回率（Recall）&quot; class=&quot;headerlink&quot; title=&quot;召回率（Recall）&quot;&gt;&lt;/a&gt;召回率（Recall）&lt;/h1&gt;&lt;p&gt;原始样本中的正类有多少被正确预测了。{FP：正类预测为负类}&lt;br&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="人工智能" scheme="http://yoursite.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-    
-      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="机器学习" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="统计" scheme="http://yoursite.com/tags/%E7%BB%9F%E8%AE%A1/"/>
     
   </entry>
   
