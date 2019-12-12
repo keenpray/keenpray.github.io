@@ -1922,7 +1922,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fffbe3;
+  background: #2b6c0d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2797,4 +2797,23 @@ embed {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.sidebar {
+  box-shadow: none;
+}
+.wobbleTransparentBK {
+  background-color: rgba(0,0,0,0) !important;
+}
+.wobbleTransparentLine {
+  border-color: rgba(0,0,0,0) !important;
+}
+.footer {
+  background-color: #f5f5f5;
+}
+.sidebar,
+.header {
+  z-index: 1 !important;
+}
+.main {
+  padding-bottom: 200px;
 }
