@@ -146,12 +146,12 @@
 
 
 
-<meta name="description" content="&#x3D;&#x3D;C语言本质上是没有String类型的，都是基于字符数据操作。&#x3D;&#x3D;C语言中字符串常量的本质表示其实是一个地址。 一、用数组表示数组：&#x3D;&#x3D;同一类型&#x3D;&#x3D;多个元素的集合，在内存中分布在地址连续的单元中。 可以直接定义char str[10];     也可以在定义的时候初始化：char str[10] &#x3D; {“keen”}，这样程序执行时会把”keen\0”依次填入；   数组名表示数组第一个元素的地">
+<meta name="description" content="&#x3D;&#x3D;C语言本质上是没有String类型的，都是基于字符数据操作。&#x3D;&#x3D; C语言中字符串常量的本质表示其实是一个地址。 一、用数组表示 数组：&#x3D;&#x3D;同一类型&#x3D;&#x3D;多个元素的集合，在内存中分布在地址连续的单元中。 可以直接定义char str[10];    - 也可以在定义的时候初始化：char str[10] &#x3D; {&quot;keen&quot;}，这样程序执行时会把&quot;keen\0&quot;依次填入；   - 数组名表示数组第一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="字符串的表示">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;uncategorized&#x2F;%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E8%A1%A8%E7%A4%BA&#x2F;index.html">
 <meta property="og:site_name" content="Keen&#39;s Blog">
-<meta property="og:description" content="&#x3D;&#x3D;C语言本质上是没有String类型的，都是基于字符数据操作。&#x3D;&#x3D;C语言中字符串常量的本质表示其实是一个地址。 一、用数组表示数组：&#x3D;&#x3D;同一类型&#x3D;&#x3D;多个元素的集合，在内存中分布在地址连续的单元中。 可以直接定义char str[10];     也可以在定义的时候初始化：char str[10] &#x3D; {“keen”}，这样程序执行时会把”keen\0”依次填入；   数组名表示数组第一个元素的地">
+<meta property="og:description" content="&#x3D;&#x3D;C语言本质上是没有String类型的，都是基于字符数据操作。&#x3D;&#x3D; C语言中字符串常量的本质表示其实是一个地址。 一、用数组表示 数组：&#x3D;&#x3D;同一类型&#x3D;&#x3D;多个元素的集合，在内存中分布在地址连续的单元中。 可以直接定义char str[10];    - 也可以在定义的时候初始化：char str[10] &#x3D; {&quot;keen&quot;}，这样程序执行时会把&quot;keen\0&quot;依次填入；   - 数组名表示数组第一">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-12-28T18:34:29.495Z">
 <meta name="twitter:card" content="summary">
@@ -460,7 +460,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  419
+                  421
                 </span>
               
 
@@ -485,20 +485,27 @@
       
 
       
-        <p>==C语言本质上是没有String类型的，都是基于字符数据操作。==<br>C语言中字符串常量的本质表示其实是一个地址。</p>
-<h1 id="一、用数组表示"><a href="#一、用数组表示" class="headerlink" title="一、用数组表示"></a>一、用数组表示</h1><p>数组：==同一类型==多个元素的集合，在内存中分布在地址连续的单元中。</p>
-<p><li>可以直接定义char str[10];</li>   </p>
-<ul>
-<li>也可以在定义的时候初始化：char str[10] = {“keen”}，这样程序执行时会把”keen\0”依次填入；  </li>
-<li>数组名表示数组第一个元素的地址；    </li>
-<li>c语言中操作字符串的本质是通过它在内存中存储单位的首地址进行的； </li>
-<li>数组名是常量，指针是变量。即可以将数组赋值给指针，但指针不能赋值给数组。</li>
-</ul>
+        <p>==C语言本质上是没有String类型的，都是基于字符数据操作。==<br>
+C语言中字符串常量的本质表示其实是一个地址。</p>
+<h1>一、用数组表示</h1>
+<p>数组：==同一类型==多个元素的集合，在内存中分布在地址连续的单元中。</p>
+<li>可以直接定义char str[10];</li>   
+- 也可以在定义的时候初始化：char str[10] = {"keen"}，这样程序执行时会把"keen\0"依次填入；  
+- 数组名表示数组第一个元素的地址；    
+- c语言中操作字符串的本质是通过它在内存中存储单位的首地址进行的； 
+- 数组名是常量，指针是变量。即可以将数组赋值给指针，但指针不能赋值给数组。
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> *s；</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">   <span class="keyword">char</span> a[];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">   <span class="comment">// 可以出现</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">   s=a; </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">   <span class="comment">// 不存在</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">   <span class="comment">// a = s；</span></span></pre></td></tr></table></figure>
 <ul>
-<li>可以通过间接操作符*取其内容，也可以通过数组的下标形式。   <h1 id="二、用指针表示"><a href="#二、用指针表示" class="headerlink" title="二、用指针表示"></a>二、用指针表示</h1>==无论指针的指向是什么类型，指针都是整型，因为它保存的都是地址。==<h2 id="1-char-与char-a"><a href="#1-char-与char-a" class="headerlink" title="1. char *与char a[]"></a>1. char *与char a[]</h2>char *b保存的是一个字符串首地址的指针变量，char a[]是多个连续的存储单元，每个单位里的数据类型都是char。<h2 id="2-char-a-与char"><a href="#2-char-a-与char" class="headerlink" title="2. char a[] 与char *"></a>2. char <em>a[] 与char *</em></h2>==char <em>a[]==：[]的优先级高于</em>。   char *a[]中a会优先与[]结合，即它首先是一个数组。其存储单元里存放的是指向char类型的指针变量，即为字符串地址（如”China”的地址）。    <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> *a [ ] = &#123;<span class="string">"China"</span>,<span class="string">"French"</span>,<span class="string">"America"</span>,<span class="string">"German"</span>&#125;;</span></pre></td></tr></table></figure>
-==char <strong>a==：char </strong>a为二级指针，保存一级指针的地址，即地址的地址。    </li>
+<li>可以通过间接操作符*取其内容，也可以通过数组的下标形式。</li>
 </ul>
+<h1>二、用指针表示</h1>
+<p>==无论指针的指向是什么类型，指针都是整型，因为它保存的都是地址。==</p>
+<h2 id="1-char-与char-a"><a class="header-anchor" href="#1-char-与char-a">¶</a>1. char *与char a[]</h2>
+<p>char *b保存的是一个字符串首地址的指针变量，char a[]是多个连续的存储单元，每个单位里的数据类型都是char。</p>
+<h2 id="2-char-a-与char"><a class="header-anchor" href="#2-char-a-与char">¶</a>2. char *a[] 与char **</h2>
+<p>==char <em>a[]==：[]的优先级高于</em>。   char *a[]中a会优先与[]结合，即它首先是一个数组。其存储单元里存放的是指向char类型的指针变量，即为字符串地址（如&quot;China&quot;的地址）。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> *a [ ] = &#123;<span class="string">"China"</span>,<span class="string">"French"</span>,<span class="string">"America"</span>,<span class="string">"German"</span>&#125;;</span></pre></td></tr></table></figure>
+<p>==char **a==：char **a为二级指针，保存一级指针的地址，即地址的地址。</p>
 
       
     </div>
@@ -572,8 +579,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/uncategorized/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/" rel="prev" title="知识图谱">
-                知识图谱 <i class="fa fa-chevron-right"></i>
+              <a href="/uncategorized/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%9A%84%E5%89%AF%E6%9C%AC%203/" rel="prev" title="知识图谱的副本 3">
+                知识图谱的副本 3 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -750,7 +757,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、用数组表示"><span class="nav-text">一、用数组表示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、用指针表示"><span class="nav-text">二、用指针表示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-char-与char-a"><span class="nav-text">1. char *与char a[]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-char-a-与char"><span class="nav-text">2. char a[] 与char *</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-text">一、用数组表示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-text">二、用指针表示</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-char-与char-a"><span class="nav-text">¶1. char *与char a[]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-char-a-与char"><span class="nav-text">¶2. char *a[] 与char **</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -794,7 +801,7 @@
 </div>
 
   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-  <span class="post-count">全站共计: 32.3k 字</span>
+  <span class="post-count">全站共计: 32.6k 字</span>
 </div>
 
 
