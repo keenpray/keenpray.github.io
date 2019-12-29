@@ -640,7 +640,6 @@
     transform: rotate(359deg);
   }
 }
-
 .faa-spin.animated,
 .faa-spin.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-spin {

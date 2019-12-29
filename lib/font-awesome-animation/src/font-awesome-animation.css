@@ -178,10 +178,11 @@
 .faa-parent.animated-hover:hover > .faa-spin.faa-fast {
 	animation: spin 0.7s linear infinite;
 }
+/* slow 2.2s -> 20s*/
 .faa-spin.animated.faa-slow,
 .faa-spin.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-spin.faa-slow {
-	animation: spin 2.2s linear infinite;
+	animation: spin 20s linear infinite;
 }
 
 /* FLOAT */
