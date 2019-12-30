@@ -2040,7 +2040,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #910fa4;
+  background: #cd2222;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2605,9 +2605,6 @@ img:hover {
 .site-uv::after {
   content: "|";
   padding-left: 10px;
-}
-.busuanzi-value {
-  color: #1890ff;
 }
 .page-archive .archive-page-counter {
   position: relative;

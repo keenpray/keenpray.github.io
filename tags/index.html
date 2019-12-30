@@ -151,7 +151,7 @@
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;tags&#x2F;index.html">
 <meta property="og:site_name" content="Keen&#39;s Blog">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-19T18:54:29.976Z">
+<meta property="og:updated_time" content="2019-12-30T16:59:56.103Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -405,10 +405,6 @@
 
           
 
-  
-
-
-
         </div>
         
           
@@ -450,7 +446,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -560,18 +556,9 @@
 
 <div class="theme-info">
 <div class="powered-by">
-<i class="fa fa-user-circle" aria-hidden="true"></i>
-<span id="busuanzi_container_site_uv">
-  访客量: <span id="busuanzi_value_site_uv"></span>
-</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<i class="fa fa-mouse-pointer" aria-hidden="true"></i>
-<span id="busuanzi_container_site_pv">
-  点击量: <span id="busuanzi_value_site_pv"></span>
-</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
-
   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-  <span class="post-count">全站共计: 32.6k 字</span>
+  <span class="post-count">全站共计: 185 字</span>
 </div>
 
 
@@ -715,6 +702,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'D43KWBQtjtaaGYMzYuW7cjp7-gzGzoHsz',
+        appKey: 'CrvNHT2RqKfdmSiuED6ctEK8',
+        placeholder: 'Say something~             (请留下您的昵称和邮箱，有回复会邮件通知您。邮箱将不会被公开！)',
+        avatar:'monsterid',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

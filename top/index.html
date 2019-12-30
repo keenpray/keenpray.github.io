@@ -153,7 +153,7 @@
 <meta property="og:site_name" content="Keen&#39;s Blog">
 <meta property="og:description" content="AV.initialize(&quot;D43KWBQtjtaaGYMzYuW7cjp7-gzGzoHsz&quot;, &quot;CrvNHT2RqKfdmSiuED6ctEK8&quot;);    var time&#x3D;0   var title&#x3D;&quot;&quot;   var url&#x3D;&quot;&quot;   var query &#x3D; new AV.Query(&amp;apos;Counter&amp;apos;);   query.notEqualTo(&amp;apos;id&amp;apos;,0);   query.d">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-10T12:58:46.857Z">
+<meta property="og:updated_time" content="2019-12-30T16:59:12.648Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -425,10 +425,6 @@
 
           
 
-  
-
-
-
         </div>
         
           
@@ -470,7 +466,7 @@
               
                 <a href="/archives/%7C%7Carchive">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -580,18 +576,9 @@
 
 <div class="theme-info">
 <div class="powered-by">
-<i class="fa fa-user-circle" aria-hidden="true"></i>
-<span id="busuanzi_container_site_uv">
-  访客量: <span id="busuanzi_value_site_uv"></span>
-</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<i class="fa fa-mouse-pointer" aria-hidden="true"></i>
-<span id="busuanzi_container_site_pv">
-  点击量: <span id="busuanzi_value_site_pv"></span>
-</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
-
   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-  <span class="post-count">全站共计: 32.6k 字</span>
+  <span class="post-count">全站共计: 185 字</span>
 </div>
 
 
@@ -735,6 +722,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'D43KWBQtjtaaGYMzYuW7cjp7-gzGzoHsz',
+        appKey: 'CrvNHT2RqKfdmSiuED6ctEK8',
+        placeholder: 'Say something~             (请留下您的昵称和邮箱，有回复会邮件通知您。邮箱将不会被公开！)',
+        avatar:'monsterid',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
