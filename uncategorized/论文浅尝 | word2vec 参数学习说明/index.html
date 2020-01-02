@@ -148,13 +148,16 @@
 
 <meta name="description" content="word2vec 的模型和应用近年来备受关注。通过 word2vec 习得 words 的矢量表示在各 NLP 任务中都很受用。甚至由于谷歌的大牌效应，提到词向量就会想到 word2vec。但大家多把 word2vec 当作一个获取词向量的工具来使用，并未过多关心其模型本身。虽然作为语言模型而言其较为粗糙，但详细了解单词嵌入模型的参数学习过程，有助于了解此类似技术的工作机制。  论文题目：wor">
 <meta property="og:type" content="article">
-<meta property="og:title" content="链表">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;uncategorized&#x2F;%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D|%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E&#x2F;index.html">
+<meta property="og:title" content="论文浅尝 | word2vec 参数学习说明">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;uncategorized&#x2F;%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D%20|%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E&#x2F;index.html">
 <meta property="og:site_name" content="Keen&#39;s Blog">
 <meta property="og:description" content="word2vec 的模型和应用近年来备受关注。通过 word2vec 习得 words 的矢量表示在各 NLP 任务中都很受用。甚至由于谷歌的大牌效应，提到词向量就会想到 word2vec。但大家多把 word2vec 当作一个获取词向量的工具来使用，并未过多关心其模型本身。虽然作为语言模型而言其较为粗糙，但详细了解单词嵌入模型的参数学习过程，有助于了解此类似技术的工作机制。  论文题目：wor">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-01-02T14:53:36.004Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;i2.tiimg.com&#x2F;707213&#x2F;e0c405eb410e86ac.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;i2.tiimg.com&#x2F;707213&#x2F;dd228e5d7de93ca0.png">
+<meta property="og:updated_time" content="2020-01-02T16:58:46.021Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;i2.tiimg.com&#x2F;707213&#x2F;e0c405eb410e86ac.png">
 
 
 
@@ -184,13 +187,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/uncategorized/论文浅尝| word2vec 参数学习说明/"/>
+  <link rel="canonical" href="http://yoursite.com/uncategorized/论文浅尝 | word2vec 参数学习说明/"/>
 
 
 
 
 
-  <title>链表 | Keen's Blog</title>
+  <title>论文浅尝 | word2vec 参数学习说明 | Keen's Blog</title>
   
 
 
@@ -376,7 +379,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/uncategorized/%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D%7C%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/uncategorized/%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D%20%7C%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Keen Wu">
@@ -393,7 +396,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">链表</h1>
+          <h1 class="post-title" itemprop="name headline">论文浅尝 | word2vec 参数学习说明</h1>
         
 
         <div class="post-meta">
@@ -421,8 +424,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2020-01-02T22:53:36+08:00">
-                2020-01-02
+              <time title="更新于" itemprop="dateModified" datetime="2020-01-03T00:58:46+08:00">
+                2020-01-03
               </time>
             
           </span>
@@ -436,8 +439,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/uncategorized/%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D%7C%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/uncategorized/%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D%7C%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E/" itemprop="commentCount"></span>
+                <a href="/uncategorized/%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D%20%7C%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/uncategorized/%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D%20%7C%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -445,7 +448,7 @@
 
           
           
-             <span id="/uncategorized/%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D%7C%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E/" class="leancloud_visitors" data-flag-title="链表">
+             <span id="/uncategorized/%E8%AE%BA%E6%96%87%E6%B5%85%E5%B0%9D%20%7C%20word2vec%20%E5%8F%82%E6%95%B0%E5%AD%A6%E4%B9%A0%E8%AF%B4%E6%98%8E/" class="leancloud_visitors" data-flag-title="论文浅尝 | word2vec 参数学习说明">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -470,7 +473,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  159
+                  293
                 </span>
               
 
@@ -498,9 +501,15 @@
         <blockquote>
 <p>word2vec 的模型和应用近年来备受关注。通过 word2vec 习得 words 的矢量表示在各 NLP 任务中都很受用。甚至由于谷歌的大牌效应，提到词向量就会想到 word2vec。但大家多把 word2vec 当作一个获取词向量的工具来使用，并未过多关心其模型本身。虽然作为语言模型而言其较为粗糙，但详细了解单词嵌入模型的参数学习过程，有助于了解此类似技术的工作机制。</p>
 </blockquote>
-<p>论文题目：word2vec Parameter Learning Explained<br>
-论文链接：<a href="https://arxiv.org/pdf/1411.2738.pdf">https://arxiv.org/pdf/1411.2738.pdf</a><br>
-![](/upload_image/word2vec 01.png)</p>
+<p>论文题目：word2vec Parameter Learning Explained<br>论文链接：<a href="https://arxiv.org/pdf/1411.2738.pdf">https://arxiv.org/pdf/1411.2738.pdf</a></p>
+<p><img src="http://i2.tiimg.com/707213/e0c405eb410e86ac.png" width = "80%" /></p>
+<hr>
+<p>本文详细推导和解释了 word2vec 模型的参数更新方程，包括原始的 CBOW 和 skip-gram 模型；以及先进的优化技术，包括分层 softmax 和负采样。本文作者还提供了一个可交互的 demo 以便大家更直观地理解模型。demo: <a href="http://bit.ly/wevi-online">wevi-online</a></p>
+<blockquote>
+<p>这篇论文是被广为推荐的 word2vec 相关参考资料，可惜其作者 Rong Xin 于 2017 年驾驶飞机失事，永远离开了我们。</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="0-反向传播基础"><a href="#0-反向传播基础" class="headerlink" title="0 反向传播基础"></a>0 反向传播基础</h1><h2 id="0-1-单个单元的学习算法"><a href="#0-1-单个单元的学习算法" class="headerlink" title="0.1 单个单元的学习算法"></a>0.1 单个单元的学习算法</h2><p><img src="http://i2.tiimg.com/707213/dd228e5d7de93ca0.png" width = "50%" /></p>
 
       
     </div>
@@ -613,8 +622,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -721,6 +739,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#0-反向传播基础"><span class="nav-text">0 反向传播基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-1-单个单元的学习算法"><span class="nav-text">0.1 单个单元的学习算法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -738,7 +772,7 @@
 
 <div class="copyright">&copy; 2019 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-heart faa-pulse animated faa-fast" style="color:red;"></i>
+    <i class="fa fa-heart faa-float animated" style="color:red;"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Keen</span>
 
@@ -749,7 +783,7 @@
 <div class="powered-by">
 </div>
   <i class="fa fa-bar-chart" aria-hidden="true"></i>
-  <span class="post-count">全站共计: 159 字</span>
+  <span class="post-count">全站共计: 293 字</span>
 </div>
 
 
