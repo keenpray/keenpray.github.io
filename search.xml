@@ -9,12 +9,15 @@
 <p>论文题目：word2vec Parameter Learning Explained<br>论文链接：<a href="https://arxiv.org/pdf/1411.2738.pdf">https://arxiv.org/pdf/1411.2738.pdf</a></p>
 <p><img src="http://i2.tiimg.com/707213/e0c405eb410e86ac.png" width = "80%" /></p>
 <hr>
-<p>本文详细推导和解释了 word2vec 模型的参数更新方程，包括原始的 CBOW 和 skip-gram 模型；以及先进的优化技术，包括分层 softmax 和负采样。本文作者还提供了一个可交互的 demo 以便大家更直观地理解模型。demo: <a href="http://bit.ly/wevi-online">wevi-online</a></p>
+<p>本文详细推导和解释了 word2vec 模型的参数更新方程，包括原始的 <span class="label info">CBOW</span> 和 <span class="label info">skip-gram</span> 模型；以及先进的优化技术，包括<span class="label info">分层 softmax</span> 和<span class="label info">负采样</span>。本文作者还提供了一个可交互的 demo 以便大家更直观地理解模型。demo: <a href="http://bit.ly/wevi-online">wevi-online</a></p>
 <blockquote>
 <p>这篇论文是被广为推荐的 word2vec 相关参考资料，可惜其作者 Rong Xin 于 2017 年驾驶飞机失事，永远离开了我们。</p>
 </blockquote>
 <a id="more"></a>
-<h1 id="0-反向传播基础"><a href="#0-反向传播基础" class="headerlink" title="0 反向传播基础"></a>0 反向传播基础</h1><h2 id="0-1-单个单元的学习算法"><a href="#0-1-单个单元的学习算法" class="headerlink" title="0.1 单个单元的学习算法"></a>0.1 单个单元的学习算法</h2><p><img src="http://i2.tiimg.com/707213/dd228e5d7de93ca0.png" width = "50%" /></p>
-]]></content>
+<h1 id="0-反向传播基础"><a href="#0-反向传播基础" class="headerlink" title="0 反向传播基础"></a>0 反向传播基础</h1><h1 id="0-1-单个单元的学习算法"><a href="#0-1-单个单元的学习算法" class="headerlink" title="0.1 单个单元的学习算法"></a>0.1 单个单元的学习算法</h1><p>如下图，展示了一个人工神经元。${ x<sub>i</sub> }$为输入值，{ w<sub>i</sub> }为权重，y 为标量输出，f为连接函数。写为公式形式即：<br>x_1<br>g(x)=8 \times ln\;x<br><img src="http://i2.tiimg.com/707213/dd228e5d7de93ca0.png" width = "50%" /></p>
+<h1 id="1-CBOW-模型"><a href="#1-CBOW-模型" class="headerlink" title="1 CBOW 模型"></a>1 CBOW 模型</h1><h2 id="1-1-One-word-context"><a href="#1-1-One-word-context" class="headerlink" title="1.1 One-word context"></a>1.1 One-word context</h2>]]></content>
+      <tags>
+        <tag>word2vec</tag>
+      </tags>
   </entry>
 </search>
